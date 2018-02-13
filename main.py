@@ -8,6 +8,8 @@ import csv
 conn = mysql.connector.connect(host="localhost",user="root",password="root", database="python_td2")
 cursor = conn.cursor()
 
+print("Bonjour")
+
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS activite (
     id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
